@@ -37,3 +37,11 @@ var copyFile = (file, dir2)=>{
 //example, copy file1.htm from 'test/dir_1/' to 'test/'
 copyFile('./test/dir_1/file1.htm', './test/');
 /*********copy the $file to $dir2 END *********/
+
+
+
+
+// moveFile(oldPath, newPath, function (err) {
+//   if (err) throw err
+//   console.log('Successfully renamed - AKA moved!')
+// })
