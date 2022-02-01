@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabular Display</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <!-- <th>Source-Schema</th>
+                <th>Destination-Schema</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            {{#each items}}
+            <tr>
+
+                <td>
+                    <ol>{{#each originalSchema.sourceSchema}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+                <td>
+                    <ol>{{#each originalSchema.destinationSchema}}
+                        <li>{{this}}</li> {{/each}}
+                    </ol>
+                </td>
+
+            </tr>
+            <thead>
+                <tr>
+                    <th>Source Table</th>
+                    <th>Destination Table</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each originalTable.sourceTable}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+                <td>
+                    <ol>{{#each originalTable.sestinationTable}}
+                        <li>{{this}}</li> {{/each}}
+                    </ol>
+                </td>
+            </tr>
+
+
+
+
+
+
+            <thead>
+                <tr>
+                    <th>Source Column</th>
+                    <th>Destination Column</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each originalCol.sourceColumn}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+                <td>
+                    <ol>{{#each originalCol.destinationColumn}}
+                        <li>{{this}}</li> {{/each}}
+                    </ol>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+
+            <thead>
+                <tr>
+                    <th>Source DataType</th>
+                    <th>Destination DataType</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each originalDatatype.sourceDatatype}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+                <td>
+                    <ol>{{#each originalDatatype.destinationDatatype}}
+                        <li>{{this}}</li> {{/each}}
+                    </ol>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+            <thead>
+
+                <tr>
+                    <th>Common Schema</th>
+                    <th>Common Table</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each commonData.commonSchema}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+                <td>
+                    <ol>{{#each commonData.commonTable}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+            </tr>
+            <thead>
+
+                <tr>
+                    <th>Common Columns</th>
+                    <th>Common DataTypes</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each commonData.commonColumns}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+                <td>
+                    <ol>{{#each commonData.commonDatatype}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+            </tr>
+
+
+
+
+            <thead>
+
+                <tr>
+                    <th>Differnt Schema</th>
+                    <th>Differnt Table</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <ol>{{#each diiferentData.diiferentSchema}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+                <td>
+                    <ol>{{#each diiferentData.diiferenTable}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+            </tr>
+            <thead>
+
+                <tr>
+                    <th>Differnt Columns</th>
+                    <th>Differnt DataTypes</th>
+                </tr>
+            </thead>
+
+            <tr>
+
+                <td>
+                    <ol>{{#each diiferentData.diiferentColumns}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+
+                <td>
+                    <ol>{{#each diiferentData.diiferentDatatype}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

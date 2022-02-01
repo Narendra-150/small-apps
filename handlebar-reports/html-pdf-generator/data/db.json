@@ -1,0 +1,32 @@
+[
+	{
+		"originalSchema": {
+			"sourceSchema": [ "GFX", "SOUL", "INDx", "IND", "USA" ],
+			"destinationSchema": [ "GFX", "SOUL", "TeamX", "IND", "USA" ]
+		},
+		"originalTable": {
+			"sourceTable": [ "AGREEMENT-G", "AGREEMENT-S", "AGREEMENT-Saq" ],
+			"destinationTable": [ "AGREEMENT-V", "AGREEMENT-G", "AGREEMENT-S", "AGREEMENT-Saq" ]
+		},
+		"originalCol": {
+			"sourceColumn": [ "SOUL_TEAM_ID", "CLIENT_TEAM_ID" ],
+			"destinationColumn": [ "CLIENT_TEAM_ID", "SOUL_TEAM_ID" ]
+		},
+		"originalDatatype": {
+			"sourceDatatype": [ "GFX", "SOUL", "INDx", "IND", "USA" ],
+			"destinationDatatype": [ "GFX", "SOUL", "TeamX", "IND", "USA" ]
+		},
+		"commonData": {
+			"commonSchema": [ "GFX", "SOUL", "IND", "USA" ],
+			"commonTable": [ "AGREEMENT-G", "AGREEMENT-S", "AGREEMENT-Saq" ],
+			"commonColumn": [ "SOUL_TEAM_ID", "CLIENT_TEAM_ID" ],
+			"commonDatatype": [ "binaryx", "varchar", "int" ]
+		},
+		"diiferentData": {
+			"diiferentSchema": [ "INDx", "TeamX" ],
+			"diiferentTable": [ "AGREEMENT-V" ],
+			"diiferentColumn": [],
+			"diiferentDatatype": [ "binary", "char" ]
+		}
+	}
+]
